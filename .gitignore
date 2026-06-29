@@ -1,0 +1,8 @@
+.env
+.venv/
+labenv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+agent_outputs/
