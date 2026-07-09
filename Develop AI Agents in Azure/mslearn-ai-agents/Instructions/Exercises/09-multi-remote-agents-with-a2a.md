@@ -136,6 +136,15 @@ For this exercise, you'll use starter code that will help you connect to your Fo
 
 1. Open the **.env** file, replace the **your_project_endpoint** placeholder with the endpoint for your project (copied from the project deployment resource in the Foundry Toolkit extension) and ensure that the MODEL_DEPLOYMENT_NAME variable is set to your model deployment name. Use **Ctrl+S** to save the file after making these changes.
 
+    Example values:
+
+    ```text
+    PROJECT_ENDPOINT=https://<your-project-name>.services.ai.azure.com/api/projects/<your-project-name>
+    MODEL_DEPLOYMENT_NAME=gpt-4.1
+    ```
+
+    > **Troubleshooting**: If the app fails at startup with `ValueError: Please provide the 1DP endpoint.`, the `PROJECT_ENDPOINT` value is still missing, empty, or still set to the placeholder. Update the value in the `.env` file and restart the application.
+
 ## Create a discoverable agent
 
 In this task, you create the title agent that helps writers create trendy headlines for their articles. You also define the agent's skills and card required by the A2A protocol to make the agent discoverable.
@@ -398,6 +407,20 @@ In this task, you use the A2A protocol to enable the routing agent to send messa
     ```
 
     After a few moments, you should see a response from the agent with the results.
+
+    A successful run will show the title agent, outline agent, and routing agent starting up, followed by a generated title and outline in the console. For example:
+
+    ```text
+    🚀 Starting title_agent_server on port 10007
+    🚀 Starting outline_agent_server on port 10008
+    🚀 Starting routing_agent_server on port 10009
+    ...
+    Enter a prompt for the agent. Type 'quit' to exit.
+    User: Create a title and outline for an article about React programming.
+    Agent: Here’s a ready-to-use title and outline.
+    ```
+
+    > **Tip**: If a previous run left the same ports busy, stop the earlier Python processes or close the stale terminal before starting the app again.
 
 1. Enter `quit` to exit the program and stop the servers.
 
