@@ -10,7 +10,6 @@ This repository showcases my journey and practical projects in developing AI Age
 | **02. Use Custom Functions in an AI Agent** | ✅ Completed | Developed an astronomy observation assistant agent equipped with custom Python function tools (e.g., event reporting and cost calculation). |
 | **03. MCP Integration** | ✅ Completed | Created an agent integrated with Model Context Protocol (MCP) tools (`api-specs`), successfully handling dynamic MCP approval requests. |
 | **04. Integrate Agent with Foundry IQ** | 🚧 Partially Completed | Set up the Foundry IQ Knowledge Base and Search resources. *Pending*: Need to complete the `agent_client.py` script to establish the project connection, fetch the agent, manage the conversation lifecycle, and handle MCP approval requests for the knowledge base. |
-
 | **06. Build Workflow in MS Foundry** | ✅ Completed | Engineered a multi-stage triage workflow leveraging Foundry's capabilities for customer support routing. |
 | **07. Agent Framework** | ✅ Completed | Developed an asynchronous agent utilizing the `agent_framework` to process data inputs and execute designated tools (e.g., submitting simulated expense claims). |
 | **08. Agent Orchestration** | ✅ Completed | Engineered a multi-agent orchestration architecture using `SequentialBuilder` to connect specialized agents (Summarizer, Classifier, Action Planner) in sequence. |
